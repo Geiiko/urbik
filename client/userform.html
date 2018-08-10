@@ -1,0 +1,19 @@
+<template name="dateInput">
+  <div class="at-input inline field">
+    <label for="at-field-{{_id}}">{{displayName}}</label>
+    <input type="date" id="at-field-{{_id}}" name="at-field-{{_id}}" {{disabled}}>
+  </div>
+</template>
+
+<template name="countryInput">
+  <label for="at-field-{{_id}}">{{displayName}}</label>
+  <select>
+    {{#each countries}}
+      {{#if located name}}
+        <option value="{{name}}" selected="selected">{{name}}</option>
+      {{else}}
+        <option value="{{name}}">{{name}}</option>
+      {{/if}}
+    {{/each}}
+  </select>
+</template>

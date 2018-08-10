@@ -1,0 +1,17 @@
+<head>
+  <title>urbik-test</title>
+</head>
+
+<body>
+
+</body>
+
+<template name="Home">
+    <h1>Welcome ! You are in : {{country}}</h1>
+    {{> atForm}}
+    {{> loginButtons}}
+</template>
+
+<template name="Table">
+  {{> collectionTable collection='allUsers' settings=tableSettings}}
+</template>
