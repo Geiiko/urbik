@@ -46,7 +46,6 @@ AccountsTemplates.addFields([
     _id: 'country',
     type: 'text',
     template: "countryInput",
-    required: true,
 },
 {
     _id: 'job',
